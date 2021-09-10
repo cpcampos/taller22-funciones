@@ -1,0 +1,55 @@
+.msgBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);*/
+  width: 242px;
+  background: #eee;
+}
+
+.msgBox p {
+  line-height: 1.5;
+  padding: 10px 20px;
+  color: #333;
+  padding-left: 82px;
+  background-position: 25px;
+  background-repeat: no-repeat;
+ 
+}
+
+.msgBox button {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.msgBox {
+  /*transition-duration: 0.8s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;*/
+  transition: transform  0.8s linear;
+  transform-origin: top left;
+  transform-style: preserve-3D;
+}
+.msgBox.rotating {
+  transform: rotate(
+    360deg
+    );
+ /* transform: rotate(360deg);
+  transform-origin: top left;
+ transform: rotate(360deg);
+  transform-origin: top left;
+ transform: rotate3d(0, 1, 0.5, 3.142rad);*/
+
+ /*animation: spin 4s linear infinite;*/
+}
+/*@keyframes spin{
+  100%{
+   // -webkit-transform: rotate(3060deg);
+    transform:rotate(360deg)
+  }
+}*/
